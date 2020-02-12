@@ -2,9 +2,7 @@
 Description: Snippet to Power Off a VSI (Virtual Server) on IBM Cloud using the IBM Cloud Functions.
 
 Requirements:
-- Docker CE installed on your Desktop/Laptop.
-- Python 2.7 for some local tests.
-- I'm using the MacOS X. But you can modify some commands to get it work on Windows.
+- Python 3.7 for some local tests.
 
 The following steps will help you to create an Action on the IBM Cloud Functions.
 This Action is based on a Python 2 snippet.
@@ -13,7 +11,7 @@ This Action is based on a Python 2 snippet.
 1. Clone this repo using "git clone" command and access the app folder.
 Example:
 ```
-git clone https://github.com/itirohidaka/PowerOff-Functions.git
+git clone https://github.com/lucas2179/PowerOff-Functions.git
 ```
 ```
 cd PowerOff-Functions
