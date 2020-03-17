@@ -1,10 +1,13 @@
-Power On/power OFF
-Fazer login na IBM Cloud
+#Power On/power OFF
+#Fazer login na IBM Cloud
 ibmcloud login 
 ibmcloud target --cf
 ibmcloud target -g Default
 
-Criando a acao
+#Criando a imagem docker
+
+
+#Criando a acao
 ibmcloud fn action create PowerOff --docker lucassouza21/powerenv poweroff.py
 Parametros
 {
