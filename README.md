@@ -49,3 +49,44 @@ ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv po
 ```
 
 # Determinando o período de execução
+- Login to the IBM Cloud Console using your Credentials (username and password)
+
+- Click on the Three Line Menu (Hamburger Menu) and click on "Functions"
+
+- Click on "Actions" and check if you Action appear on the list. In my example, I'm using the "itiroaction01" name for the action name.
+
+- Click on "Trigger" item and click on the "Create" button.
+
+- Click on "Create Trigger".
+
+- Click on "Periodic"
+
+- Type the name on "Trigger Name" field.
+
+- Select the days and hours that the function will be executed. You can select a pre defined period on "Select pattern" field.
+
+- In the JSON Payload, type:
+```
+{
+  "username": "<softlayer_username>",
+  "key": "<softlayer_api_key>",
+  "vsiname":"<name_of_the_vsi>",
+  "poweraction":"<power_action>",
+  "vsiid": "<id_vsi>"
+}
+```
+
+
+OBS: Change <id_vsi> with the ID of the VSI that needs to Powered On/Off.
+
+16. Click on "Create" button.
+
+17. In the next screen, click on "Add" button to associate an action with the Trigger.
+
+18. Click on "Select Existing" Button.
+
+19. Click on "Select an Action" field and Select you action.
+
+20. Click on Add.
+
+21. Your Function is now created with a Trigger and a Action!
