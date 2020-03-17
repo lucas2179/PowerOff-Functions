@@ -28,7 +28,7 @@ ibmcloud target -g Default
  ```
  ibmcloud cr build --no-cache --quiet --tag us.icr.io/your-namespace/powerenv .
  ```
-# Criando a acao
+# Criando a action no IBM Cloud Functions
 ```
 ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv poweroff.py
 ```
@@ -47,3 +47,5 @@ ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv po
    "vsiid": "idvsi"
 }
 ```
+
+# Determinando o período de execução
