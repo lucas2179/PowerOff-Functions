@@ -15,7 +15,10 @@ ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv po
 
 # Parametros para rodar a function
 - key: Deve ser uma apikey de infraestrutura classica
-- poweraction: Pode ser on(ligar) ou off(desligar)
+- poweraction: Pode ser on(ligar) ou off(desligar)<br>
+
+# Exemplo de entrada
+```
 {
   "username": "chaves api ibm *infraestrutura classica",
   "key": "api key infraestrutura classica",
@@ -23,3 +26,4 @@ ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv po
   "poweraction":"off/on",
    "vsiid": "idvsi"
 }
+```
