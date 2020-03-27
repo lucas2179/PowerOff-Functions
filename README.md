@@ -36,6 +36,17 @@ ibmcloud fn action create PowerOff --docker us.icr.io/your-namespace/powerenv po
 # Parametros para rodar a function
 - key: Deve ser uma apikey de infraestrutura classica
 - poweraction: Pode ser on(ligar) ou off(desligar)<br>
+- username: Usuário que criou a apikey de infraestrutura clássica
+- vsiid: Id da vsi
+- vsiname: Nome da vsi
+
+
+# Obtendo o username da API Key de Infraestrutura Clássica
+
+- No portal, clicar em Gerenciar > Acesso(IAM) > Usuários
+- Selecione o usuário que criou a chave
+- Role a página até a sessão "Senha da VPN"
+- Copie o username desta sessão. Normalmente será o número da conta + "_"+ email do usuário. Exemplo: 1753401_exemplo@exemplo.com
 
 # Exemplo de entrada
 ```
